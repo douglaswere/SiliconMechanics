@@ -1,0 +1,424 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+.the-icons {
+    font-size: 25px;
+}
+
+a {
+    color: #ffff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.menu-container {
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header {
+    background-color: rgba(27, 27, 27, 1);
+}
+
+#logo {
+    height: 5%;
+    margin-left: 20%;
+}
+
+.menu {
+    border: 1px solid #fff;
+    /* For debugging */
+    width: 900px;
+}
+
+.contact {
+    font-family: 'Helvetica Bold', 'Helvetica';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: #97BF04;
+}
+
+.inner-addon {
+    position: relative;
+}
+
+/* style icon */
+
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+/* align icon */
+
+.left-addon .glyphicon {
+    left: 0px;
+}
+
+.right-addon .glyphicon {
+    right: 0px;
+}
+
+/* add padding  */
+
+.left-addon input {
+    padding-left: 30px;
+}
+
+.right-addon input {
+    padding-right: 30px;
+}
+
+.form-control {
+    padding-right: 30px;
+}
+
+.form-control+.glyphicon {
+    position: absolute;
+    right: 0;
+    padding: 8px 27px;
+}
+
+.center-block {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-group .icon-addon .form-control {
+    border-radius: 0;
+}
+
+.icon-addon {
+    position: relative;
+    color: #555;
+    display: block;
+}
+
+.icon-addon:after,
+.icon-addon:before {
+    display: table;
+    content: " ";
+}
+
+.icon-addon:after {
+    clear: both;
+}
+
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon,
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 10px 0;
+    top: 1px
+}
+
+.icon-addon.addon-lg .form-control {
+    line-height: 1.33;
+    height: 46px;
+    font-size: 18px;
+    padding: 10px 16px 10px 40px;
+}
+
+.icon-addon.addon-sm .form-control {
+    height: 30px;
+    padding: 5px 10px 5px 28px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.icon-addon.addon-lg .fa,
+.icon-addon.addon-lg .glyphicon {
+    font-size: 18px;
+    margin-left: 0;
+    left: 11px;
+    top: 4px;
+}
+
+.icon-addon.addon-md .form-control,
+.icon-addon .form-control {
+    padding-left: 30px;
+    float: left;
+    font-weight: normal;
+}
+
+.icon-addon.addon-sm .fa,
+.icon-addon.addon-sm .glyphicon {
+    margin-left: 0;
+    font-size: 12px;
+    left: 5px;
+    top: -1px
+}
+
+.icon-addon .form-control:focus+.glyphicon,
+.icon-addon:hover .glyphicon,
+.icon-addon .form-control:focus+.fa,
+.icon-addon:hover .fa {
+    color: #2580db;
+}
+
+textarea,
+input {
+    padding: 5px;
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    width: 80%;
+    text-decoration: inherit;
+    height: 35px;
+}
+
+.gray9 {
+    color: #97BF04;
+    margin-bottom: 0px;
+}
+
+/* Navbar container */
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+a:not([href]):not([tabindex]) {
+    color: white;
+    text-decoration: none;
+}
+
+/* Links inside the navbar */
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgba(27, 27, 27, 1);
+}
+
+/* Dropdown content (hidden by default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h1 {
+    border-width: 0px;
+    position: center;
+    top: 514px;
+    width: auto;
+    font-family: 'Helvetica Bold', 'Helvetica';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    color: #95A531;
+}
+
+.u1_div {
+    background-color: rgba(27, 27, 27, 1);
+    border: none;
+    align-content: center;
+    align-self: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+
+.columns {
+    float: left;
+    width: 23.3%;
+    padding: 2px;
+    box-shadow: 0 8px 12px 0;
+    margin-left: 1%;
+    margin-bottom: 5%;
+}
+
+/* Style the list */
+
+.price {
+    list-style-type: none;
+    margin: 0;
+    padding: 5;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* Add shadows on hover */
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+/* Pricing header */
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+    font-family: 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    line-height: normal;
+    padding: 3%;
+    background: #CCC;
+    filter: alpha(opacity=60);
+    /* IE */
+    -moz-opacity: 0.6;
+    /* Mozilla */
+    opacity: 0.4;
+    /* CSS3 */
+}
+
+/* List items */
+
+/* Grey list item */
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+/* The "Sign Up" button */
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: #101010;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+div#captioned-gallery { 
+  width: 100%; overflow: hidden; 
+  background-color: #97BF04;
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 30s slidy infinite; 
+  margin-top: 1px;
+  margin-top: 1px;
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100%; height: auto; }
+figure.slider figure figcaption { 
+  position: absolute; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .6rem; 
+}
+
+span {
+    align-content: center;
+    font-family: 'Helvetica';
+    color: #A1A1A1;
+}
+
+.li-price {
+    text-align: center;
+}
+
+.li-box {
+    position: absolute;
+    width: 100%;
+    opacity: 0.3;
+}
